@@ -17,7 +17,11 @@ function getNombres() {
 }
 
 const Nombres = ()=>{
-  return <ul> { getNombres() } </ul> ;
+  return <ul> {
+    nombres.map( (nombre,index) => <li key={index}> {nombre}</li>)
+    }</ul> 
+
+  
 }
 
 const App = ()=>{
